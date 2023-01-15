@@ -1,0 +1,11 @@
+file_format: "1"
+id: mEnki42
+name: mEnki42
+type: shield
+url: https://github.com/aroum/mEnki42/
+requires: [seeeduino_xiao_ble]
+features:
+  - keys
+siblings:
+  - mEnki42
+

@@ -1,0 +1,19 @@
+# Copyright (c) 2020 The ZMK Contributors
+# SPDX-License-Identifier: MIT
+
+if SHIELD_MENKI42
+
+config ZMK_KEYBOARD_NAME
+	default "mEnki42"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+	default y
+
+endif
+
+if SHIELD_MENKI42
+
+config ZMK_SPLIT
+	default y
+
+endif
