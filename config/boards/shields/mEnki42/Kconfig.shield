@@ -1,5 +1,8 @@
 # Copyright (c) 2020 The ZMK Contributors
 # SPDX-License-Identifier: MIT
 
-config SHIELD_MENKI42
-	def_bool $(shields_list_contains,mEnki42)
+config SHIELD_MENKI42_KBD
+	def_bool $(shields_list_contains,mEnki42_kbd)
+
+config SHIELD_MENKI42_DONGLE
+	def_bool $(shields_list_contains,mEnki42_dongle)

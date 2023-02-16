@@ -1,7 +1,7 @@
 # Copyright (c) 2020 The ZMK Contributors
 # SPDX-License-Identifier: MIT
 
-if SHIELD_MENKI42
+if SHIELD_MENKI42_DONGLE
 
 config ZMK_KEYBOARD_NAME
 	default "mEnki42"
@@ -11,9 +11,11 @@ config ZMK_SPLIT_ROLE_CENTRAL
 
 endif
 
-if SHIELD_MENKI42
+
+if SHIELD_MENKI42_DONGLE || SHIELD_MENKI42_KBD
 
 config ZMK_SPLIT
 	default y
+
 
 endif

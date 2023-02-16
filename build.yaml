@@ -7,4 +7,7 @@
 ---
 include:
   - board: seeeduino_xiao_ble
-    shield: mEnki42
+    shield: mEnki42_kbd
+  - board: seeeduino_xiao_ble
+    shield: mEnki42_dongle
+

@@ -7,5 +7,6 @@ requires: [seeeduino_xiao_ble]
 features:
   - keys
 siblings:
-  - mEnki42
+  - mEnki42_kbd
+  - mEnki42_dongle
 
