@@ -55,4 +55,4 @@ RC(4,0) RC(4,1) RC(4,2) RC(4,3) RC(4,4) RC(4,5) RC(5,5) RC(5,4) RC(5,3) RC(5,2) 
 &xiao_i2c { status = "disabled"; };
 &xiao_serial { status = "disabled"; };
 
-gpio_pin_write(dev, &gpio0  13, 0);
+gpios = <&gpio0 13 GPIO_ACTIVE_LOW>;
