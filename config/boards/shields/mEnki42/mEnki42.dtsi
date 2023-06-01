@@ -50,9 +50,8 @@ RC(4,0) RC(4,1) RC(4,2) RC(4,3) RC(4,4) RC(4,5)         RC(5,5) RC(5,4) RC(5,3) 
 	    , <&gpio1  10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
             ;
     };
-};
-
-    left_encoder: encoder_left {
+    
+     left_encoder: encoder_left {
         compatible = "alps,ec11";
         label = "LEFT_ENCODER";
         a-gpios = <&gpio0  16  (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
@@ -65,6 +64,9 @@ RC(4,0) RC(4,1) RC(4,2) RC(4,3) RC(4,4) RC(4,5)         RC(5,5) RC(5,4) RC(5,3) 
         compatible = "zmk,keymap-sensors";
         sensors = <&left_encoder>;
     };
+};
+
+   
 
 &xiao_spi { status = "disabled"; };
 &xiao_i2c { status = "disabled"; };
