@@ -6,3 +6,6 @@
 
 #include "mEnki42.dtsi"
 
+&left_encoder {
+    status = "okay";
+};
