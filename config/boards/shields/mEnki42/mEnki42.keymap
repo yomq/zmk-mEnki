@@ -62,6 +62,7 @@
   &mt LALT  BSLH  &kp Z &kp X &kp C &kp V &kp B               &kp N  &kp M  &kp COMMA &kp DOT &kp FSLH &mt RALT MINUS
         &lt RSE TAB &mt LSHFT SPACE &lt LWR RET              &lt LWR ESC &mt RSHFT BSPC &lt RSE DEL
                         >;
+                        sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
                 };
                 lower_layer {
 // -----------------------------------------------------------------------------------------
@@ -75,6 +76,7 @@
  &mt LALT EQUAL  &kp N0           &kp N1 &kp N2   &kp N3      &numdot                     &kp LG(SPACE) &kp F4    &kp F5     &kp F6    &kp F7    &mt RALT F3
                                                   &lt ADJ TAB &trans &trans        &trans &trans        &lt ADJ DEL
                         >;
+                        sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
                 };
                 raise_layer {
 // -----------------------------------------------------------------------------------------
@@ -88,6 +90,7 @@
 &kp LALT   &kp C_MUTE     &kp PG_DN  &kp LG(LS(S))  &kp END  &kp C_PLAY                                  &kp N0    &kp END   &grtsgn      &kp PG_DN  &kp C_MUTE    &kp RALT
                                                     &trans   &trans       &lt ADJ RET        &lt ADJ ESC &trans &trans
                         >; 
+                        sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
                 };
                                 adjust_layer {
 // -----------------------------------------------------------------------------------------
@@ -101,6 +104,7 @@
 &ext_power EP_OFF     &kp KP_NUM    &none        &none        &none        &none                             &none        &none        &none        &none        &none         &ext_power EP_OFF 
                                                               &trans       &none     &trans           &trans &none        &trans
                         >;
+                        sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
                 };
         };
 };
