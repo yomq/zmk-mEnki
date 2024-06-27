@@ -64,10 +64,10 @@
             //                             | RSE | SPC | LWR |   | LWR | BKSP | RSE |
 
             bindings = <
-&kp TAB        &kp Q  &kp W  &kp E         &kp R          &kp T    &kp Y  &kp U      &kp I          &kp O    &kp P             &kp BSLH
-&mt LCTRL ESC  &kp A  &kp S  &kp D         &kp F          &kp G    &kp H  &kp J      &kp K          &kp L    &kp SINGLE_QUOTE  &kp ENTER
-&kp LSHIFT     &kp Z  &kp X  &kp C         &kp V          &kp B    &kp N  &kp M      &kp COMMA      &kp DOT  &kp FSLH          &kp RSHIFT
-                             &kp LEFT_ALT  &kp LEFT_META  &mo 2    &mo 1  &kp SPACE  &kp BACKSPACE
+&kp TAB        &kp Q  &kp W  &kp E  &kp R         &kp T            &kp Y          &kp U      &kp I      &kp O    &kp P     &kp BSLH
+&mt LCTRL ESC  &kp A  &kp S  &kp D  &kp F         &kp G            &kp H          &kp J      &kp K      &kp L    &kp SEMI  &kp SINGLE_QUOTE
+&kp LSHIFT     &kp Z  &kp X  &kp C  &kp V         &kp B            &kp N          &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp RSHIFT
+                             &mo 2  &kp LEFT_ALT  &kp LEFT_META    &kp BACKSPACE  &kp SPACE  &mo 1
             >;
         };
 
@@ -80,7 +80,7 @@
 
             bindings = <
 &kp GRAVE  &kp NUMBER_1          &kp NUMBER_2           &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5     &kp NUMBER_6      &kp NUMBER_7   &kp NUMBER_8  &kp N9            &kp NUMBER_0       &trans
-&kp TILDE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans        &kp MINUS     &kp LESS_THAN    &kp GREATER_THAN  &kp EQUAL      &kp PLUS      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp SEMI
+&kp TILDE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans        &kp MINUS     &kp LESS_THAN    &kp GREATER_THAN  &kp EQUAL      &kp PLUS      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp ENTER
 &trans     &kp EXCLAMATION       &kp AT_SIGN            &kp HASH      &kp DOLLAR    &kp PERCENT      &kp CARET         &kp AMPERSAND  &kp STAR      &kp LEFT_BRACE    &kp RIGHT_BRACE    &trans
                                                         &trans        &trans        &trans           &trans            &trans         &trans
             >;
@@ -94,10 +94,10 @@
             //                          | ___ | ___  | ADJ  |            | ADJ  | ___  | ___ |
 
             bindings = <
-&kp LWIN   &kp C_VOL_UP  &kp PG_UP  &kp C_PP       &kp HOME  &kp C_PAUSE    &kp N0       &kp HOME  &kp C_PP  &kp PG_UP  &kp C_VOL_UP  &kp RWIN
-&kp LCTRL  &kp C_VOL_DN  &kp LEFT   &kp UP         &kp DOWN  &kp RIGHT      &kp LEFT     &kp DOWN  &kp UP    &kp RIGHT  &kp C_VOL_DN  &kp RALT
-&kp LALT   &kp C_MUTE    &kp PG_DN  &kp LG(LS(S))  &kp END   &kp C_PLAY     &kp N0       &kp END   &grtsgn   &kp PG_DN  &kp C_MUTE    &kp RALT
-                                    &trans         &trans    &lt ADJ RET    &lt ADJ ESC  &trans    &trans
+&kp LWIN   &kp C_VOL_UP  &kp PG_UP  &kp C_PP       &kp HOME  &kp C_PAUSE    &kp N0     &kp HOME  &kp C_PP  &kp PG_UP  &kp C_VOL_UP  &kp RWIN
+&kp LCTRL  &kp C_VOL_DN  &kp LEFT   &kp UP         &kp DOWN  &kp RIGHT      &kp LEFT   &kp DOWN  &kp UP    &kp RIGHT  &kp C_VOL_DN  &kp RALT
+&kp LALT   &kp C_MUTE    &kp PG_DN  &kp LG(LS(S))  &kp END   &kp C_PLAY     &kp N0     &kp END   &grtsgn   &kp PG_DN  &kp C_MUTE    &kp RALT
+                                    &trans         &trans    &lt 3 RET      &lt 3 ESC  &trans    &trans
             >;
         };
 
