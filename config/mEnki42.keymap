@@ -58,9 +58,9 @@
 //                             | RSE | SPC | LWR |   | LWR | BKSP | RSE |
                         bindings = <
   &kp TAB &kp Q &kp W &kp E &kp R &kp T               &kp Y  &kp U  &kp I     &kp O   &kp P    &kp BSLH 
-  &kp LCTRL &kp A &kp S &kp D &kp F &kp G               &kp H  &kp J  &kp K     &kp L   &kp SEMI &kp SQT
+  &mt LALT ESC &kp A &kp S &kp D &kp F &kp G               &kp H  &kp J  &kp K     &kp L   &kp SEMI &kp SQT
   &kp LSHIFT &kp Z &kp X &kp C &kp V &kp B               &kp N  &kp M  &kp COMMA &kp DOT &kp FSLH &kp RSHIFT
-        &kp LWIN &kp LALT &mo RSE              &mo LWR &kp SPC &kp BKSP
+        &kp LWIN &kp LCTRL &mo RSE              &mo LWR &kp SPC &kp BKSP
                         >;
                 };
                 lower_layer {
