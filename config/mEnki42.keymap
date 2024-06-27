@@ -60,14 +60,14 @@
   &kp TAB &kp Q &kp W &kp E &kp R &kp T               &kp Y  &kp U  &kp I     &kp O   &kp P    &kp BSLH 
   &mt LALT ESC &kp A &kp S &kp D &kp F &kp G               &kp H  &kp J  &kp K     &kp L   &kp SEMI &kp SQT
   &kp LSHIFT &kp Z &kp X &kp C &kp V &kp B               &kp N  &kp M  &kp COMMA &kp DOT &kp FSLH &kp RSHIFT
-        &kp LWIN &kp LCTRL &mo RSE              &kp CARET &kp SPC &kp BKSP
+        &kp LWIN &kp LCTRL &mt RSE              &mt LWR RET &kp SPC &kp BKSP
                         >;
                 };
                 lower_layer {
 // -----------------------------------------------------------------------------------------
 //|LGUI/CAPS |  *  |  7 |  8  |  9  |  +  |    |  !  |  @  |  #  |  $  |  %  | RGUI/F1 |
 //|CTRL/MENU |  /  |  4 |  5  |  6  |  -  |    |  ^  |  &  |  *  |  (  |  )  | CTRL/F2 |
-//|  LALT/=  |  0  |  1 |  4  |  3  |  .  |    |  ls |  F4 |  F5 |  F6 |  F7 | RALT/F3 |
+//|  LALT/=  |  0  |  1 |  2  |  3  |  .  |    |  ls |  F4 |  F5 |  F6 |  F7 | RALT/F3 |
 //                      | ADJ | ___ | ___ |    | ___ | ___ | ADJ |
                         bindings = <
  &mt LWIN CAPS   &kp KP_MULTIPLY  &kp N7 &kp N8   &kp N9      &kp PLUS                    &kp EXCL      &kp AT    &kp HASH   &kp DLLR  &kp PRCNT &mt RWIN F1  
