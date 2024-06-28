@@ -13,15 +13,9 @@
 #define ADJ 3
 
 &mt {
-    hold-while-undecided;
-    tapping-term-ms = <500>;
 };
 
-&lt {
-    flavor = "hold-preferred";
-    hold-while-undecided;
-    tapping-term-ms = <500>;
-};
+&lt { flavor = "hold-preferred"; };
 
 / {
 };
