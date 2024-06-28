@@ -47,9 +47,9 @@
             //                      | ADJ | ___ | ___ |    | ___ | ___ | ADJ |
 
             bindings = <
-&kp GRAVE  &kp NUMBER_1     &kp NUMBER_2      &kp NUMBER_3    &kp NUMBER_4          &kp NUMBER_5    &kp NUMBER_6  &kp NUMBER_7           &kp NUMBER_8     &kp N9             &kp NUMBER_0  &trans
-&trans     &kp UNDER        &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp MINUS       &kp EQUAL     &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp PLUS      &trans
-&kp TILDE  &kp EXCLAMATION  &kp AT_SIGN       &kp HASH        &kp DOLLAR            &kp PERCENT     &kp CARET     &kp AMPERSAND          &kp STAR         &kp COLON          &kp PIPE      &trans
+&kp GRAVE  &kp NUMBER_1     &kp NUMBER_2      &kp NUMBER_3    &kp NUMBER_4          &kp NUMBER_5    &kp NUMBER_6  &kp NUMBER_7           &kp NUMBER_8     &kp N9             &kp NUMBER_0  &kp BACKSLASH
+&kp STAR   &kp UNDER        &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp MINUS       &kp EQUAL     &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp PLUS      &trans
+&kp TILDE  &kp EXCLAMATION  &kp AT_SIGN       &kp HASH        &kp DOLLAR            &kp PERCENT     &kp CARET     &kp AMPERSAND          &kp SEMI         &kp COLON          &kp PIPE      &trans
                                               &trans          &trans                &trans          &trans        &trans                 &trans
             >;
         };
