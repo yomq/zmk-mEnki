@@ -27,10 +27,10 @@
             //                             | RSE | SPC | LWR |   | LWR | BKSP | RSE |
 
             bindings = <
-&kp TAB           &kp Q  &kp W  &kp E  &kp R             &kp T    &kp Y      &kp U      &kp I          &kp O    &kp P     &kp BSLH
-&mt LEFT_ALT ESC  &kp A  &kp S  &kp D  &kp F             &kp G    &kp H      &kp J      &kp K          &kp L    &kp SEMI  &kp SINGLE_QUOTE
-&kp LSHIFT        &kp Z  &kp X  &kp C  &kp V             &kp B    &kp N      &kp M      &kp COMMA      &kp DOT  &kp FSLH  &kp RSHIFT
-                                &mo 2  &kp LEFT_CONTROL  &mo 1    &kp ENTER  &kp SPACE  &kp BACKSPACE
+&kp TAB               &kp Q  &kp W  &kp E         &kp R         &kp T    &kp Y        &kp U      &kp I          &kp O    &kp P     &kp BSLH
+&mt LEFT_CONTROL ESC  &kp A  &kp S  &kp D         &kp F         &kp G    &kp H        &kp J      &kp K          &kp L    &kp SEMI  &kp SINGLE_QUOTE
+&kp LSHIFT            &kp Z  &kp X  &kp C         &kp V         &kp B    &kp N        &kp M      &kp COMMA      &kp DOT  &kp FSLH  &kp RSHIFT
+                                    &kp LEFT_ALT  &kp LEFT_GUI  &mo 2    &lt 1 ENTER  &kp SPACE  &kp BACKSPACE
             >;
         };
 
@@ -43,9 +43,9 @@
 
             bindings = <
 &kp GRAVE  &kp NUMBER_1          &kp NUMBER_2           &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5     &kp NUMBER_6      &kp NUMBER_7   &kp NUMBER_8  &kp N9            &kp NUMBER_0       &trans
-&kp TILDE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDER     &kp MINUS     &kp LESS_THAN    &kp GREATER_THAN  &kp EQUAL      &kp PLUS      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp ENTER
+&kp TILDE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDER     &kp MINUS     &kp LESS_THAN    &kp GREATER_THAN  &kp EQUAL      &kp PLUS      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans
 &trans     &kp EXCLAMATION       &kp AT_SIGN            &kp HASH      &kp DOLLAR    &kp PERCENT      &kp CARET         &kp AMPERSAND  &kp STAR      &kp LEFT_BRACE    &kp RIGHT_BRACE    &trans
-                                                        &trans        &trans        &trans           &trans            &trans         &kp UNDER
+                                                        &trans        &trans        &trans           &trans            &trans         &trans
             >;
         };
 
@@ -57,10 +57,10 @@
             //                          | ___ | ___  | ADJ  |            | ADJ  | ___  | ___ |
 
             bindings = <
-&trans         &trans  &trans  &trans  &trans         &trans         &trans    &trans    &kp HOME  &trans     &trans  &trans
-&kp LEFT_META  &trans  &trans  &trans  &kp PAGE_DOWN  &trans         &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &trans  &trans
-&trans         &trans  &trans  &trans  &trans         &kp PAGE_UP    &kp END   &trans    &trans    &trans     &trans  &trans
-                               &trans  &trans         &trans         &trans    &trans    &trans
+&trans         &trans  &trans  &trans  &trans         &trans         &trans          &trans          &kp HOME      &trans           &trans  &trans
+&kp LEFT_META  &trans  &trans  &trans  &kp PAGE_DOWN  &trans         &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans  &trans
+&trans         &trans  &trans  &trans  &trans         &kp PAGE_UP    &kp END         &trans          &trans        &trans           &trans  &trans
+                               &trans  &trans         &trans         &trans          &trans          &trans
             >;
         };
     };
