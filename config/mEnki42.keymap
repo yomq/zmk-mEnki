@@ -12,15 +12,9 @@
 #define RSE 2
 #define ADJ 3
 
-&mt {
-    flavor = "tap-preferred";
-    tapping-term-ms = <225>;
-};
+&mt { flavor = "tap-preferred"; };
 
-&lt {
-    flavor = "tap-preferred";
-    tapping-term-ms = <225>;
-};
+&lt { flavor = "tap-preferred"; };
 
 / {
 };
