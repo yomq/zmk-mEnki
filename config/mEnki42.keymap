@@ -13,9 +13,14 @@
 #define ADJ 3
 
 &mt {
+    flavor = "tap-preferred";
+    tapping-term-ms = <225>;
 };
 
-&lt { flavor = "hold-preferred"; };
+&lt {
+    flavor = "tap-preferred";
+    tapping-term-ms = <225>;
+};
 
 / {
 };
