@@ -32,7 +32,7 @@
 
             bindings = <
 &kp TAB     &kp Q           &kp W           &kp E               &kp R             &kp T        &kp Y      &kp U              &kp I                &kp O            &kp P                       &kp TAB
-&kp ESCAPE  &mt LEFT_GUI A  &mt LEFT_ALT S  &mt LEFT_CONTROL D  &mt LEFT_SHIFT F  &kp G        &kp H      &mt RIGHT_SHIFT J  &mt RIGHT_CONTROL K  &mt RIGHT_ALT L  &mt RIGHT_GUI SINGLE_QUOTE  &kp MINUS
+&kp ESCAPE  &mt LEFT_ALT A  &mt LEFT_GUI S  &mt LEFT_CONTROL D  &mt LEFT_SHIFT F  &kp G        &kp H      &mt RIGHT_SHIFT J  &mt RIGHT_CONTROL K  &mt RIGHT_GUI L  &mt RIGHT_ALT SINGLE_QUOTE  &kp MINUS
 &trans      &kp Z           &kp X           &kp C               &kp V             &kp B        &kp N      &kp M              &kp COMMA            &kp DOT          &kp FSLH                    &trans
                                             &kp BACKSPACE       &mo 2             &kp ENTER    &kp SPACE  &mo 1              &kp DELETE
             >;
