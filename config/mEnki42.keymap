@@ -58,7 +58,7 @@ ZMK_BEHAVIOR(hmr, hold_tap,
 
             bindings = <
 &kp TAB     &kp Q           &kp W           &kp E               &kp R             &kp T        &kp Y      &kp U              &kp I                &kp O            &kp P                       &kp TAB
-&kp ESCAPE  &hml LEFT_ALT A  &hml LEFT_GUI S  &hml LEFT_CONTROL D  &hml LEFT_SHIFT F  &kp G        &kp H      &hmr RIGHT_SHIFT J  &hmr RIGHT_CONTROL K  &hmr RIGHT_GUI L  &hmr RIGHT_ALT SINGLE_QUOTE  &kp MINUS
+&kp ESCAPE  &hml LEFT_ALT A &hml LEFT_GUI S &hml LEFT_CONTROL D &hml LEFT_SHIFT F &kp G        &kp H      &hmr RIGHT_SHIFT J &hmr RIGHT_CONTROL K &hmr RIGHT_GUI L &hmr RIGHT_ALT SINGLE_QUOTE &kp MINUS
 &trans      &kp Z           &kp X           &kp C               &kp V             &kp B        &kp N      &kp M              &kp COMMA            &kp DOT          &kp FSLH                    &trans
                                             &kp BACKSPACE       &mo 2             &kp ENTER    &kp SPACE  &mo 1              &sk RIGHT_SHIFT
             >;
