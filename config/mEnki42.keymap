@@ -23,6 +23,11 @@ ZMK_BEHAVIOR(mtl, hold_tap,
     bindings = <&mo>, <&sl>;
 )
 
+ZMK_BEHAVIOR(ss_cw, tap_dance,
+    tapping-term-ms = <200>;
+    bindings = <&sk RSHFT>, <&kp CAPS>;
+)
+
 ZMK_BEHAVIOR(hml, hold_tap,
     flavor = "balanced";
     tapping-term-ms = <280>;
@@ -66,7 +71,7 @@ ZMK_BEHAVIOR(hmr, hold_tap,
 &kp TAB     &kp Q           &kp W           &kp E               &kp R             &kp T        &kp Y      &kp U              &kp I                &kp O            &kp P                       &kp TAB
 &kp ESCAPE  &hml LEFT_ALT A &hml LEFT_GUI S &hml LEFT_CONTROL D &hml LEFT_SHIFT F &kp G        &kp H      &hmr RIGHT_SHIFT J &hmr RIGHT_CONTROL K &hmr RIGHT_GUI L &hmr RIGHT_ALT SINGLE_QUOTE &kp MINUS
 &trans      &kp Z           &kp X           &kp C               &kp V             &kp B        &kp N      &kp M              &kp COMMA            &kp DOT          &kp FSLH                    &trans
-                                            &kp BACKSPACE       &mtl 2 2          &kp ENTER    &kp SPACE  &mtl 1 1           &sk RIGHT_SHIFT
+                                            &kp BACKSPACE       &mtl 2 2          &kp ENTER    &kp SPACE  &mtl 1 1           &ss_cw
             >;
         };
 
