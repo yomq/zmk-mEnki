@@ -17,6 +17,26 @@
 #define KEYS_R RT0 RT1 RT2 RT3 RT4 RT5 RM0 RM1 RM2 RM3 RM4 RM5 RB0 RB1 RB2 RB3 RB4 RB5
 #define THUMBS LH2 LH1 LH0 RH0 RH1 RH2
 
+ZMK_CONDITIONAL_LAYER(1 2, 3)
+
+ZMK_BEHAVIOR(bsp_del, mod_morph,
+    bindings = <&kp BSPC>, <&kp DEL>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+    keep-mods = <MOD_RSFT>;
+)
+
+ZMK_BEHAVIOR(dot_cln, mod_morph,
+    bindings = <&kp DOT>, <&kp COLON>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+    keep-mods = <MOD_RSFT>;
+)
+
+ZMK_BEHAVIOR(com_scln, mod_morph,
+    bindings = <&kp COMMA>, <&kp SEMI>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+    keep-mods = <MOD_RSFT>;
+)
+
 ZMK_BEHAVIOR(mtl, hold_tap,
     flavor = "hold-preferred";
     tapping-term-ms = <200>;
@@ -69,9 +89,9 @@ ZMK_BEHAVIOR(hmr, hold_tap,
 
             bindings = <
 &kp TAB     &kp Q           &kp W           &kp E               &kp R             &kp T        &kp Y      &kp U              &kp I                &kp O            &kp P                       &kp TAB
-&kp ESCAPE  &hml LEFT_ALT A &hml LEFT_GUI S &hml LEFT_CONTROL D &hml LEFT_SHIFT F &kp G        &kp H      &hmr RIGHT_SHIFT J &hmr RIGHT_CONTROL K &hmr RIGHT_GUI L &hmr RIGHT_ALT SINGLE_QUOTE &kp MINUS
-&trans      &kp Z           &kp X           &kp C               &kp V             &kp B        &kp N      &kp M              &kp COMMA            &kp DOT          &kp FSLH                    &trans
-                                            &kp BACKSPACE       &mtl 2 2          &kp ENTER    &kp SPACE  &mtl 1 1           &ss_cw
+&kp ESCAPE  &hml LEFT_ALT A &hml LEFT_GUI S &hml LEFT_CONTROL D &hml LEFT_SHIFT F &kp G        &kp H      &hmr RIGHT_SHIFT J &hmr RIGHT_CONTROL K &hmr RIGHT_GUI L &hmr RIGHT_ALT SINGLE_QUOTE &trans
+&trans      &kp Z           &kp X           &kp C               &kp V             &kp B        &kp N      &kp M              &com_scln            &dot_cln         &kp FSLH                    &trans
+                                            &bsp_del            &mtl 2 2          &kp ENTER    &kp SPACE  &mtl 1 1           &ss_cw
             >;
         };
 
@@ -83,10 +103,10 @@ ZMK_BEHAVIOR(hmr, hold_tap,
             //                      | ADJ | ___ | ___ |    | ___ | ___ | ADJ |
 
             bindings = <
-&kp GRAVE       &kp NUMBER_1     &kp NUMBER_2      &kp NUMBER_3    &kp NUMBER_4          &kp NUMBER_5    &kp NUMBER_6  &kp NUMBER_7           &kp NUMBER_8     &kp N9             &kp NUMBER_0      &kp BACKSLASH
+&kp GRAVE       &kp NUMBER_1     &kp NUMBER_2      &kp NUMBER_3    &kp NUMBER_4          &kp NUMBER_5    &kp NUMBER_6  &kp NUMBER_7           &kp NUMBER_8     &kp N9             &kp NUMBER_0      &kp BSLH
 &kp UNDERSCORE  &kp LESS_THAN    &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp MINUS       &kp EQUAL     &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp GREATER_THAN  &kp PLUS
-&kp TILDE       &kp EXCLAMATION  &kp AT_SIGN       &kp HASH        &kp DOLLAR            &kp PERCENT     &kp CARET     &kp AMPERSAND          &kp SEMI         &kp COLON          &kp PIPE          &kp STAR
-                                                   &kp DELETE      &trans                &trans          &trans        &trans                 &trans
+&kp TILDE       &kp EXCLAMATION  &kp AT_SIGN       &kp HASH        &kp DOLLAR            &kp PERCENT     &kp CARET     &kp AMPERSAND          &kp STAR         &trans             &trans            &kp PIPE
+                                                   &trans          &trans                &trans          &trans        &trans                 &trans
             >;
         };
 
