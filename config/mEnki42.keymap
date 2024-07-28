@@ -70,7 +70,14 @@ ZMK_BEHAVIOR(hmr, hold_tap,
 
 &lt { flavor = "tap-preferred"; };
 
-&sk {
+&sk { 
+    quick-release;
+    ignore-modifiers;
+};
+
+&sl { 
+    quick-release;
+    ignore-modifiers;
 };
 
 / {
