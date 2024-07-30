@@ -41,7 +41,9 @@ ZMK_BEHAVIOR(mtl, hold_tap,
 )
 
 ZMK_BEHAVIOR(shift_macro, macro,
-    bindings = <&sk RSHFT>
+    wait-ms = <0>;
+    tap-ms = <1>;
+    bindings = <&sk RSHFT>;
 )
 
 ZMK_BEHAVIOR(ss_cw, tap_dance,
