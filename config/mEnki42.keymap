@@ -144,9 +144,9 @@ ZMK_BEHAVIOR(hmr, hold_tap,
             //                          | ___ | ___  | ADJ  |            | ADJ  | ___  | ___ |
 
             bindings = <
-&trans  &trans  &kp GRAVE  &trans      &trans  &trans         &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &trans
-&trans  &trans  &trans     &trans      &trans  &trans         &trans  &trans        &trans        &trans        &trans        &trans
-&trans  &trans  &kp TILDE  &bt BT_CLR  &trans  &bootloader    &trans  &trans        &trans        &trans        &trans        &trans
+&trans  &kp GRAVE  &trans  &trans      &trans  &trans         &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &trans
+&trans  &trans     &trans  &trans      &trans  &trans         &trans  &trans        &trans        &trans        &trans        &trans
+&trans  &kp TILDE  &trans  &bt BT_CLR  &trans  &bootloader    &trans  &trans        &trans        &trans        &trans        &trans
                            &trans      &trans  &trans         &trans  &trans        &trans
             >;
         };
