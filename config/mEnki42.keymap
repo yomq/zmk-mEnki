@@ -102,7 +102,7 @@ ZMK_BEHAVIOR(hmr, hold_tap,
 &trans  &kp Q            &kp W            &kp E                &kp R              &kp T       &kp Y      &kp U               &kp I                 &kp O             &kp P                        &trans
 &trans  &hml LEFT_ALT A  &hml LEFT_GUI S  &hml LEFT_CONTROL D  &hml LEFT_SHIFT F  &kp G       &kp H      &hmr RIGHT_SHIFT J  &hmr RIGHT_CONTROL K  &hmr RIGHT_GUI L  &hmr RIGHT_ALT SINGLE_QUOTE  &trans
 &trans  &kp Z            &kp X            &kp C                &kp V              &kp B       &kp N      &kp M               &com_scln             &dot_cln          &kp FSLH                     &trans
-                                          &kp ESC              &mtl 1 1           &kp BSPC    &kp SPACE  &mtl 2 2            &kp TAB
+                                          &kp ESC              &mtl 1 1           &kp BSPC    &kp SPACE  &mtl 2 2            &kp RET
             >;
         };
 
@@ -117,7 +117,7 @@ ZMK_BEHAVIOR(hmr, hold_tap,
 &trans  &kp NUMBER_1     &kp NUMBER_2      &kp NUMBER_3    &kp NUMBER_4          &kp NUMBER_5    &kp NUMBER_6  &kp NUMBER_7           &kp NUMBER_8     &kp N9             &kp NUMBER_0      &trans
 &trans  &kp LESS_THAN    &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp MINUS       &kp EQUAL     &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp GREATER_THAN  &trans
 &trans  &kp EXCLAMATION  &kp AT_SIGN       &kp HASH        &kp DOLLAR            &kp PERCENT     &kp CARET     &kp AMPERSAND          &kp STAR         &kp BSLH           &kp PIPE          &trans
-                                           &trans          &trans                &trans          &trans        &trans                 &trans
+                                           &trans          &trans                &trans          &kp TAB       &trans                 &trans
             >;
         };
 
