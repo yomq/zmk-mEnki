@@ -95,9 +95,9 @@ ZMK_BEHAVIOR(hmr, hold_tap,
         default_layer {
 
             bindings = <
-&kp TAB  &kp Q            &kp W            &kp E                &kp R              &kp T       &kp Y      &kp U               &kp I                 &kp O             &kp P                &kp BSLH
-&kp ESC  &hml LEFT_ALT A  &hml LEFT_GUI S  &hml LEFT_CONTROL D  &hml LEFT_SHIFT F  &kp G       &kp H      &hmr RIGHT_SHIFT J  &hmr RIGHT_CONTROL K  &hmr RIGHT_GUI L  &hmr RIGHT_ALT SEMI  &kp SINGLE_QUOTE
-&trans   &kp Z            &kp X            &kp C                &kp V              &kp B       &kp N      &kp M               &com_scln             &dot_cln          &kp FSLH             &trans
+&kp TAB  &kp Q            &kp W            &kp E                &kp R              &kp T       &kp Y      &kp U               &kp I                 &kp O             &kp P                        &kp BSLH
+&kp ESC  &hml LEFT_ALT A  &hml LEFT_GUI S  &hml LEFT_CONTROL D  &hml LEFT_SHIFT F  &kp G       &kp H      &hmr RIGHT_SHIFT J  &hmr RIGHT_CONTROL K  &hmr RIGHT_GUI L  &hmr RIGHT_ALT SINGLE_QUOTE  &kp MINUS
+&trans   &kp Z            &kp X            &kp C                &kp V              &kp B       &kp N      &kp M               &com_scln             &dot_cln          &kp FSLH                     &kp EQUAL
                                            &ss_cw               &mtl 1 1           &kp BSPC    &kp SPACE  &mtl 2 2            &kp RET
             >;
         };
