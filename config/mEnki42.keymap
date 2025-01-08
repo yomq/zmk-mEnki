@@ -125,10 +125,10 @@ ZMK_BEHAVIOR(hmr, hold_tap,
         adjust_layer {
 
             bindings = <
-&trans  &trans     &trans     &trans         &sys_reset   &trans    &trans    &trans     &trans     &trans   &trans         &trans
-&trans  &LALT      &LGUI      &LCTRL         &LSHIFT      &trans    &kp HOME  &kp PG_DN  &kp PG_UP  &kp END  &kp RALT       &trans
-&trans  &trans     &trans     &trans         &trans       &blr      &trans    &trans     &trans     &trans   &trans         &trans
-                              &trans         &trans       &trans    &trans    &trans     &trans
+&trans  &trans    &trans    &trans     &sys_reset  &trans    &trans    &trans     &trans     &trans   &trans         &trans
+&trans  &kp LALT  &kp LGUI  &kp LCTRL  &kp LSHIFT  &trans    &kp HOME  &kp PG_DN  &kp PG_UP  &kp END  &kp RALT       &trans
+&trans  &trans    &trans    &trans     &trans      &blr      &trans    &trans     &trans     &trans   &trans         &trans
+                            &trans     &trans      &trans    &trans    &trans     &trans
             >;
         };
     };
