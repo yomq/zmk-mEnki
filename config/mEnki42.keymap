@@ -18,6 +18,8 @@
 #define KEYS_R RT0 RT1 RT2 RT3 RT4 RT5 RM0 RM1 RM2 RM3 RM4 RM5 RB0 RB1 RB2 RB3 RB4 RB5
 #define THUMBS LH2 LH1 LH0 RH0 RH1 RH2
 
+ZMK_CONDITIONAL_LAYER(magic, 1 2, 3)
+
 ZMK_BEHAVIOR(bsp_del, mod_morph,
     bindings = <&kp BSPC>, <&kp DEL>;
     mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -91,17 +93,6 @@ ZMK_BEHAVIOR(hmr, hold_tap,
 };
 
 / {
-    combos {
-        compatible = "zmk,combos";
-        combo {
-            timeout-ms = <50>;
-            key-positions = <LH1 RH1>;
-            bindings = <&mo 3>;
-        };
-    };
-};
-
-/ {
     keymap {
         compatible = "zmk,keymap";
 
@@ -119,7 +110,7 @@ ZMK_BEHAVIOR(hmr, hold_tap,
 
             bindings = <
 &trans  &kp F1   &kp F2   &kp F3  &kp F4  &kp F5     &kp F6    &kp F7          &kp F8        &kp F9           &kp F10  &trans
-&trans  &kp F11  &kp F12  &trans  &trans  &trans     &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans   &trans
+&trans  &kp F11  &kp F12  &trans  &trans  &trans     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans   &trans
 &trans  &trans   &trans   &trans  &trans  &trans     &trans    &trans          &trans        &trans           &trans   &trans
                           &trans  &trans  &trans     &kp TAB   &trans          &trans
             >;
@@ -139,7 +130,7 @@ ZMK_BEHAVIOR(hmr, hold_tap,
 
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans     &trans     &trans   &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp HOME  &kp PG_DN  &kp PG_UP  &kp END  &trans  &trans
+&trans  &LEFT_ALT  &LEFT_GUI  &LEFT_CONTROL  &LEFT_SHIFT  &trans    &kp HOME  &kp PG_DN  &kp PG_UP  &kp END  &kp RIGHT_ALT  &trans
 &trans  &trans  &trans  &trans  &trans  &blr      &trans    &trans     &trans     &trans   &trans  &trans
                         &trans  &trans  &trans    &trans    &trans     &trans
             >;
