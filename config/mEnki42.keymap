@@ -91,6 +91,17 @@ ZMK_BEHAVIOR(hmr, hold_tap,
 };
 
 / {
+    combos {
+        compatible = "zmk,combos";
+        combo_esc {
+            timeout-ms = <5000>;
+            key-positions = <LH1 RH1>;
+            bindings = <&mo 3>;
+        };
+    };
+};
+
+/ {
     keymap {
         compatible = "zmk,keymap";
 
