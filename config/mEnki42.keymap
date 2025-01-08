@@ -90,9 +90,6 @@ ZMK_BEHAVIOR(hmr, hold_tap,
 };
 
 / {
-};
-
-/ {
     keymap {
         compatible = "zmk,keymap";
 
@@ -129,10 +126,10 @@ ZMK_BEHAVIOR(hmr, hold_tap,
         adjust_layer {
 
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans     &trans     &trans   &trans  &trans
+&trans  &trans     &trans     &trans         &trans       &trans    &trans    &trans     &trans     &trans   &trans         &trans
 &trans  &LEFT_ALT  &LEFT_GUI  &LEFT_CONTROL  &LEFT_SHIFT  &trans    &kp HOME  &kp PG_DN  &kp PG_UP  &kp END  &kp RIGHT_ALT  &trans
-&trans  &trans  &trans  &trans  &trans  &blr      &trans    &trans     &trans     &trans   &trans  &trans
-                        &trans  &trans  &trans    &trans    &trans     &trans
+&trans  &trans     &trans     &trans         &trans       &blr      &trans    &trans     &trans     &trans   &trans         &trans
+                              &trans         &trans       &trans    &trans    &trans     &trans
             >;
         };
     };
